@@ -114,3 +114,45 @@ console.log("This is our shorthand version of adding 12 to the variable a3's cur
 a3 -= 11;
 
 console.log("Same as above but with a '-=' operator so: 15 - 11 is", a3);
+
+// Practicing using string variables
+
+var myFirstName = "Here is \"a double quoted string\" if you type in a backslash '\\' it will ignore the quotation mark as a non string";
+
+console.log(myFirstName);
+
+console.log("To get the backslash '\\' to display via the console log, you can type in two in a row '\\\\' this is because the escape character ignore the function of the next character");
+console.log("so if you type in two back-slashes '\\' the first backslash causes the second backslash to ignore it's usage and it is printed as part of the string.");
+
+/* ]
+ About single quote characters
+ If you have your string surrounded by single quotes('), you can just add in double quotes ("),
+ or if you use backticks((`)this key is located on the upper left side of keyboard) you can put both double and single quotes inside of a string.
+ */
+
+/**
+ HERE ARE SOME ESCAPE CHARACTERS
+ CODE    OUTPUT
+ \'		single quote
+ /"		double quote
+ \\		backslash
+ \n		newline
+ \r		carriage return
+ \t		tab
+ \b		backspace
+ \f		form feed
+ **/
+
+console.log("what happens if I enter the newline \nand then I type more text?");
+
+var myEscExample = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+console.log(myEscExample);
+
+// Concantinating strings
+
+// We can concatenate strings by adding a plus.
+
+console.log('"console.log("Here is a str" + "ing")" Becomes:');
+
+console.log("Here is a str" + "ing");
