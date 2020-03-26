@@ -84,3 +84,33 @@ console.log("The value of myNumber is still being kept in memory, so in order to
 
 console.log("A quick note when console logging, a space is automatically added to the end of the console log if we are logging more than one thing, in order to remove it we need to add a '+', after the initial declaration in the log, like so:"+ myNumber);
 
+// About Decimal Numbers, IE floats
+
+var flProduct = 2.0 * 2.6;
+
+console.log("This is a float", flProduct);
+
+/* About the remainder operator
+ The remainder operator is '%' and it gives us the remainder of two numbers.
+ for instance 11 divided by three gives us an even 9 with a remainder of two
+ This is often used to determine whether a number is even or odd.
+ */
+
+
+var remainder;
+
+myRemainder = 11 % 3;
+
+console.log("With the remainder (%) operator, we get the remainder of two numbers divided, for instance the remainder of 11 divided by 3 (11 % 3) is:", myRemainder);
+
+// About the += operator
+
+var a3 = 3;
+
+a3 += 12; //This is a shorthand version of writing 'a3 = a3 + 12;
+
+console.log("This is our shorthand version of adding 12 to the variable a3's current value which was assigned as 3:", a3);
+
+a3 -= 11;
+
+console.log("Same as above but with a '-=' operator so: 15 - 11 is", a3);
