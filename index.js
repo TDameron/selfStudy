@@ -189,8 +189,40 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 
 	var wordGame = "";
 
-	wordGame += "The " + myAdjective + myNoun + myVerb + " alone " + myAdverb;
+	wordGame += "The" + " " + myAdjective + " " + myNoun + " " + myVerb + " " + "alone" + " " + myAdverb;
 
 	return wordGame;
 }
 console.log(wordBlanks("Cat","orange","jumped", "quickly"));
+
+// Working with arrays
+
+var testArray = ["Sean", 32];
+
+// Nested Arrays, an array within an array
+
+var testNest = [["First Element", 1], "Another Array", 23];
+
+fromArray = [12,32,44];
+var theData = fromArray[0];
+
+console.log(fromArray[0]);
+
+// Modifying arrays with indexes
+
+fromArray[0] = 45; //Here we reassign index 0 fromArray and change it to 45, it was previously 12.
+
+console.log(fromArray);
+
+// Pulling from nested array
+//Array:					0			1				2
+var arrayArray = [[1,2,3],[10,11,12],[100,200,300]];
+//Element:			0	1	2	0	1	2		0	1	2
+
+// When selecting indexes from nested arrays, the first index refers to which array within the nested array that we are pulling from.
+// The second number refers to which element from within the array that we need to choose.
+var dataArray = arrayArray[1][2];
+
+console.log(dataArray);
+
+//Amend data to the end of an array with the "push" function.
