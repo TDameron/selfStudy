@@ -185,12 +185,12 @@ firstLetterOfStr = myExampleStr[myExampleStr.length - 1];
 console.log(firstLetterOfStr);
 
 
-function wordBlanks(myNoun, myAdective, myVerb, myAdverb) {
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 
 	var wordGame = "";
 
-	var wordGame += "The " + myAdjective + myNoun + myVerb + " alone " + myAdverb;
+	wordGame += "The " + myAdjective + myNoun + myVerb + " alone " + myAdverb;
 
 	return wordGame;
 }
-console.log(wordBlanks("Cat","orange","jumped", "forever"));
+console.log(wordBlanks("Cat","orange","jumped", "quickly"));
