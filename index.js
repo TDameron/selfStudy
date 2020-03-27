@@ -156,3 +156,41 @@ console.log(myEscExample);
 console.log('"console.log("Here is a str" + "ing")" Becomes:');
 
 console.log("Here is a str" + "ing");
+
+var myStr = "This is my string ";
+
+myStr += "we are going to concantinate the string with an operator";
+
+console.log(myStr);
+
+// Finding the length of a string.
+// we can use the .length property.
+
+var exampleStrLength = 0;
+var myExampleStr = "Working From Home";
+
+exampleStrLength = myExampleStr.length;
+
+console.log(exampleStrLength);
+
+// About bracket notation, remember that bracket notation starts at 0, this is called "zero based indexing"
+
+firstLetterOfStr = myExampleStr[0];
+
+console.log(firstLetterOfStr);
+
+// We can find the last letter of a given string even without knowing the length of said string by placing the variable inside of a bracket with .length - 1 inside said bracket.
+firstLetterOfStr = myExampleStr[myExampleStr.length - 1];
+
+console.log(firstLetterOfStr);
+
+
+function wordBlanks(myNoun, myAdective, myVerb, myAdverb) {
+
+	var wordGame = "";
+
+	var wordGame += "The " + myAdjective + myNoun + myVerb + " alone " + myAdverb;
+
+	return wordGame;
+}
+console.log(wordBlanks("Cat","orange","jumped", "forever"));
