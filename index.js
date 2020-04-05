@@ -226,3 +226,25 @@ var dataArray = arrayArray[1][2];
 console.log(dataArray);
 
 //Amend data to the end of an array with the "push" function.
+
+var array4push = [["Janet", 42],["Elephant", 63]];
+
+array4push.push(["Example", 9000]);
+
+console.log(array4push);
+
+// The .pop function removes the final element from the array.
+array4push.pop();
+
+console.log(array4push, "We removed the last array with our .pop function.");
+
+// The .shift function removes the first element of the array.
+
+array4push.shift();
+
+console.log(array4push, "We have removed the first array");
+
+array4push.unshift("We just added this string to the beginning of our array.");
+
+console.log(array4push);
+
