@@ -248,3 +248,48 @@ array4push.unshift("We just added this string to the beginning of our array.");
 
 console.log(array4push);
 
+function myFunctionParameters(a,b) {
+	console.log (a - b);
+}
+
+myFunctionParameters(11, 6);
+
+
+//Global Variable
+var clothing = "shorts";
+
+function digitalStyle() {
+	//Local Variable
+	var clothing = "socks";
+
+	return clothing;
+}
+
+console.log(digitalStyle(), "<--- Here the local variable of 'socks' overwrites the global variable of 'shorts'.");
+
+// "return" in a function will return the result.
+
+function subtractTwo(num) {
+	return num - 2;
+}
+
+console.log(subtractTwo(10), "Here, we placed a 10 inside of the subtract two function, and with 'return' we were able to get a final number of 8");
+
+// About queues
+
+function nextInLine(arr, item) {
+	// Code here
+	arr.push(item);
+	return arr.shift();
+}
+
+var testArr = [1,2,3,4,5];
+
+//For below, we have our array as defined above,
+//This array has the number 6 added to the end with .push
+//and it has the first element removed from the array with the .shift
+// NOTE ABOUT ".JSON.stringify": .JSON.stringify allows us to turn an array into a string.
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
