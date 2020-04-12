@@ -293,3 +293,11 @@ console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
+// All about Booleans
+// Only 2 values, true and false
+
+function exampleBoolean() {
+	return true; // or false
+}
+
+// About if statements
