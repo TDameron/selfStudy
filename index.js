@@ -301,3 +301,146 @@ function exampleBoolean() {
 }
 
 // About if statements
+
+function ourTrueOrFalse(isItTrue) {
+	if (isItTrue) {
+		return "Yes, this is true";
+	}
+	return "No, this is false";
+}
+
+function ourTrueOrFalse(wasThatTrue) {
+	if(wasThatTrue) {
+		return "Yes, that was true"
+	}
+	return "No, that was false";
+
+}
+
+console.log(ourTrueOrFalse(true));
+
+function testEqual(val) {
+	if (val == 12) { // Change this line
+		return "Equal";
+	}
+	return "Not Equal";
+}
+
+console.log(testEqual(10));
+
+/*
+About the Strict Equality Operator
+
+
+The strict equality operator does not do type conversion
+this is done via three equals signs, "==="
+
+for instance:
+
+3 === 3 will evaluate to 'true'
+
+3 === '3' will evaluate to false because '3' with quotes is a string and 3 without quotes is an integer.
+ */
+
+function compareEquality(a, b) {
+	if (a == b) {
+		return "Equal";
+	}
+	return "Not Equal";
+}
+
+// Change this value to test
+console.log(compareEquality(10, "10", "this is equal because the double equals sign does type conversion"));
+
+// The inequality operator is != meaning not equal
+
+// There is also a strict inequality operator, it is: !==
+
+//other examples of operators
+
+function greaterThanTest(val) {
+	if (val > 100) {
+		return "Over 100";
+	}
+
+	if (val > 10) {
+		return "Over 10";
+	}
+
+	return "10 or under"
+}
+
+console.log(greaterThanTest(99));
+
+console.log(greaterThanTest(106));
+
+console.log(greaterThanTest(2));
+
+// Using the greater than or equal to operator  (>=)
+// less than or equal to operator (<=)
+
+
+function testGreaterOrEqual(val) {
+	if (val >= 20) {
+		return "20 or Over";
+	}
+
+	if (val >= 10) {
+		return "10 or Over";
+	}
+
+	return "Less than 10";
+}
+
+// the && operator
+
+function testLogicalAnd(val) {
+	//Below, if the value is below 50 AND (&&) the value is above 25, the function will return "Yes"
+	if (val <= 50 && val >= 25) {
+		return "Yes";
+	}
+
+	return "No";
+}
+
+console.log(testLogicalAnd(33));
+
+// Or statements, the or operator is defined using: ||
+
+function orValueTest(val) {
+
+	if (val < 10 || val > 20 ) {
+		return "Outside";
+	}
+
+	return "Inside";
+}
+
+console.log(orValueTest(12),"  <---This is our 'or' value test");
+
+// Else statements
+
+function testElse(val) {
+	var result = "";
+
+	if (val >5) {
+		result = "Bigger than 5";
+	} else {
+		result = "5 or Smaller";
+	}
+
+	return result;
+}
+
+// Else if statements, a way of chaining 'if' statements together
+
+function testElseIf(val) {
+	if (val > 10) {
+		return "Greater than 10"
+	} else if (val < 5) {
+		return "Smaller than 5";
+	} else {
+		return "Greater than or equal to 10"
+	}
+}
+
